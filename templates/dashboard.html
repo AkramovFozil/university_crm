@@ -1,0 +1,147 @@
+{% extends 'lists/faculty_list.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div class="main-content">
+    <div class="section__content section__content--p30">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="overview-wrap">
+                        <h2 class="title-1">Overview</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-25">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="overview-item overview-item--c1">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ faculties|length }}</h2>
+                                    <span>Faculty</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <!-- Chart placeholder -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="overview-item overview-item--c2">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="fa fa-bank"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ departments|length }}</h2>
+                                    <span>Department</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <!-- Chart placeholder -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="overview-item overview-item--c3">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-calendar-note"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ subjects|length }}</h2>
+                                    <span>Subject</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <!-- Chart placeholder -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-t-25">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="overview-item overview-item--c1">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-account-o"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ teachers|length }}</h2>
+                                    <span>Teachers</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <!-- Chart placeholder -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="overview-item overview-item--c2">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ groups|length }}</h2>
+                                    <span>Groups</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <!-- Chart placeholder -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="overview-item overview-item--c3">
+                        <div class="overview__inner">
+                            <div class="overview-box clearfix">
+                                <div class="icon">
+                                    <i class="zmdi zmdi-calendar-note"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>{{ students|length }}</h2>
+                                    <span>Students</span>
+                                </div>
+                            </div>
+                            <div class="overview-chart">
+                                <!-- Chart placeholder -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="au-card m-b-30">
+                        <div class="au-card-inner">
+                            <h3 class="title-2 m-b-40">Single Bar Chart</h3>
+                            <canvas id="singelBarChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="au-card m-b-30">
+                        <div class="au-card-inner">
+                            <h3 class="title-2 m-b-40">Pie Chart</h3>
+                            <canvas id="pieChart1"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
