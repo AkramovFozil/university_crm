@@ -23,7 +23,7 @@
     </div>
 </div>
 <footer>
-    <p>Powered by <a href="https://www.linkedin.com/in/fozil-akramov-832a78272/">Fozil Akramov</a></p>
+    <p>Powered by <a href="https://www.linkedin.com/in/mirshoxid-mirshoxidov-ab8b9b32a/">Fozil Akramov</a></p>
 </footer>
 {% endblock %}
 <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>

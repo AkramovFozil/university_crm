@@ -1,18 +1,18 @@
 {% extends 'confirms/confirm_faculty.html' %}
 {% block content %}
 <div class="container">
-    <h1>Are you sure to delete this '{{ subject.name }}'</h1>
+    <h1>Are you sure to delete this '{{ department.name }}'</h1>
     <div class="btn-container">
         <form method="post">
             {% csrf_token %}
             <button class="btn btn-danger btn-yes" type="submit">Yes, I'm sure</button>
         </form>
         <form method="get">
-            <a href="{% url 'subjects' %}" class="btn btn-primary btn-no">No, take me back</a>
+            <a href="{% url 'departments' %}" class="btn btn-primary btn-no">No, take me back</a>
         </form>
     </div>
 </div>
 <footer>
-    <p>Powered by <a href="https://www.linkedin.com/in/fozil-akramov-832a78272/">Fozil Akramov</a></p>
+    <p>Powered by <a href="https://www.linkedin.com/in//">Fozil Akramov</a></p>
 </footer>
 {% endblock %}

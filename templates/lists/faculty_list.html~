@@ -75,7 +75,7 @@
                             <div class="account-wrap">
                                 <div class="account-item clearfix js-item-menu">
                                     <div class="image">
-                                        <img src="{% static 'images/icon/logo-mini.jpg' %}"
+                                        <img src="{% static 'images/icon/logo-mini.png' %}"
                                              alt="loner"/>
                                     </div>
                                     <div class="content">
